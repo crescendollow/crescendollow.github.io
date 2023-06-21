@@ -1,78 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Digitales</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        header {
+            background-color: midnightblue;
+            text-align: center;
+            border-radius: 15px;
+            padding-top: 10px;
+            color: white;
+        }
+
+        form {
+            background-color: antiquewhite;
+            width: 40%;
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            margin: auto;
+            padding: 2em;
+            margin-top: 1em;
+            border-radius: 15px;
+        }
+
+        input {
+            width: 100%;
+            border-bottom: 2px;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <div><img class="Logo" src="Logo.jpg" width="200px"/></div>
-        <h1>Digitalers Portal &#127748;</h1>
-        <h2>Ultimas noticias del curso digitalers</h2>
+        <h1>Hola!</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-        </ul>
-    </nav>
     <main>
-        <section id="noticias">
-            <article class="noticia" id="noticia_uno">
-                <header><h3>Primera Noticia!</h3></header>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum aliquid explicabo quia molestiae mollitia corrupti, doloribus nihil? Expedita dolorem voluptatum est, eius cumque voluptatibus odio at magnam ipsum odit recusandae?</p>
-            </article>
-            <article class="noticia" id="noticia_dos">
-                <header><h3>Segunda Noticia!</h3></header>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum beatae, voluptatibus esse velit numquam harum ut ea excepturi recusandae officia hic suscipit autem eum consequuntur cumque atque, eius nesciunt omnis?</p>
-            </article>
-            <article class="noticia" id="noticia_tres">
-                <header><h3>Una IA crea los simpsons en la vida real</h3></header>
-                <p>
-                   Se le pidio a una IA que retrate a los simpson en la vida real y esto es lo que salio.
-                   queres verlos en el siguiente link: <a href="https://elcomercio.pe/tecnologia/inteligencia-artificial/asi-se-verian-los-personajes-de-los-simpsons-en-la-vida-real-segun-una-ia-fotos-inteligencia-artificial-midjourney-noticia/">Aqui!</a>
-                </p> 
-             </article>
-        </section>
-        <section id="comentarios">
-            <article id="comentario_uno">
-                <img src="Avatar.jpg" alt="USer one" width="50px">
-                <p>Aprendi mucho</p>
-            </article>
-            <article id="comentario_dos">
-                <img src="Avatar.jpg" alt="USer two" width="50px">
-                <p>Aprendi mas que mucho</p>
-            </article>
-            <article id="comentario_tres">
-                <img src="Avatar.jpg" alt="USer three" width="50px">
-                <p>Aprendi muchisimo</p>
-            </article>
-        </section>
-        <section>
-            Deja un comentario
-            <form>
-                <label>Nombre: </label>
-                <input type="text" required>
-                <label>Correo: </label>
-                <input type="email" required>
-                <label>Comentario: </label>
-                <textarea></textarea>
-                <button>Dejar Comment</button>
-            </form>
-        </section>
+        <form>
+            <div>
+                <label for="txtname">Nombre:</label>
+                <div>
+                    <input type="text" name="nombre" id="txtname" required pattern="^[A-Z][a-z]*$" />
+                </div>
+            </div>
+            <div>
+                <label for="txtsurname">Apellido:</label>
+                <div>
+                    <input type="text" name="apellido" id="txtsurname" required minlength="3" maxlength="10" />
+                </div>
+            </div>
+            <div>
+                <label for="txtdocument">Documento:</label>
+                <div>
+                    <input type="number" name="documento" id="txtdocument" required min="1000000" max="60000000" />
+                </div>
+            </div>
+            <div>
+                <label for="txtemail">Correo:</label>
+                <div><input type="email" name="email" id="txtemail" required /></div>
+            </div>
+            <div>
+                <label for="textpass">Password:</label>
+                <div>
+                    <input type="password" name="password" id="textpass" required />
+                </div>
+            </div>
+            <div>
+                <label for="cmbpais">Seleccione Pais</label>
+                <div>
+                    <select title="cmbpais">
+                        <option>Argentina</option>
+                        <option>Brasil</option>
+                        <option>Uruguay</option>
+                    </select>
+                </div>
+            </div>
+            <button>Enviar Formulario</button>
+        </form>
     </main>
-    <aside>
-        <h4>Unete ya!!! Telecom</h4>
-        <p>Es muy buena, muy rapida</p>
-    </aside>
-    <footer>
-        Copyright Digitalers &copy;
-    </footer>
 </body>
+
 </html>
