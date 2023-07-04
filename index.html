@@ -1,117 +1,200 @@
 <!DOCTYPE html>
-<html>
-
-<head>
+<html lang="es">
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Digitales</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="/Entrega Class 4/Estilos/main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/Estilos/main.css"
+    />
     <script src="main.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div><img class="Logo" src="/Entrega Class 4/Imagenes/Logo.jpg" width="200px" /></div>
-        <h1>Digitalers Portal &#127748;</h1>
-        <h2>Ultimas noticias del curso digitalers</h2>
+      <h1 class="title">Digitalers Portal &#127748;</h1>
+      <h2 class="pageSubtitle">Ultimas noticias del curso digitalers</h2>
     </header>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#form">Contacto</a></li>
+      </ul>
     </nav>
     <main>
+      <div class="newsContainer">
+        <header class="mainHeader containerTitle">
+          Conoce las ultimas noticias Digitalers
+        </header>
         <section id="noticias" class="noticias-box">
-            <article class="noticia" id="noticia_uno">
-                <header>
-                    <h3>Primera Noticia!</h3>
-                </header>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
-                    aliquid explicabo quia molestiae mollitia corrupti, doloribus nihil?
-                    Expedita dolorem voluptatum est, eius cumque voluptatibus odio at
-                    magnam ipsum odit recusandae?
-                </p>
-            </article>
-            <article class="noticia" id="noticia_dos">
-                <header>
-                    <h3>Segunda Noticia!</h3>
-                </header>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum
-                    beatae, voluptatibus esse velit numquam harum ut ea excepturi
-                    recusandae officia hic suscipit autem eum consequuntur cumque atque,
-                    eius nesciunt omnis?
-                </p>
-            </article>
-            <article class="noticia" id="noticia_tres">
-                <header>
-                    <h3>Una IA crea los simpsons en la vida real</h3>
-                </header>
-                <p>
-                    Se le pidio a una IA que retrate a los simpson en la vida real y
-                    esto es lo que salio. queres verlos en el siguiente link:
-                    <a
-                        href="https://elcomercio.pe/tecnologia/inteligencia-artificial/asi-se-verian-los-personajes-de-los-simpsons-en-la-vida-real-segun-una-ia-fotos-inteligencia-artificial-midjourney-noticia/">Aqui!</a>
-                </p>
-            </article>
+          <article class="noticia" id="noticia_uno">
+            <header class="mainHeader">
+              <h3>Un juegaso para aprender CSS</h3>
+            </header>
+            <p class="newsBody">
+              Queres ser un jedi del frontend? Que estas esperando. El programa
+              digitalers es tu oportunidad. Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Illum aliquid explicabo quia
+              molestiae mollitia corrupti, doloribus nihil? Expedita dolorem
+              voluptatum est, eius cumque voluptatibus odio at magnam ipsum odit
+              recusandae?
+            </p>
+          </article>
+          <article class="noticia" id="noticia_dos">
+            <header class="mainHeader">
+              <h3>Digitallers es la mejor propuesta de capacitacion</h3>
+            </header>
+            <p class="newsBody">
+              Queres ser un jedi del frontend? Que estas esperando. El programa
+              digitalers es tu oportunidad. Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Rerum beatae, voluptatibus esse
+              velit numquam harum ut ea excepturi recusandae officia hic
+              suscipit autem eum consequuntur cumque atque, eius nesciunt omnis?
+            </p>
+          </article>
+          <article class="noticia" id="noticia_tres">
+            <header class="mainHeader">
+              <h3>Una IA crea los simpsons en la vida real</h3>
+            </header>
+            <p class="newsBody">
+              Se le pidio a una IA que retrate a los simpson en la vida real y
+              esto es lo que salio. queres verlos en el siguiente link:
+              <a
+                href="https://elcomercio.pe/tecnologia/inteligencia-artificial/asi-se-verian-los-personajes-de-los-simpsons-en-la-vida-real-segun-una-ia-fotos-inteligencia-artificial-midjourney-noticia/"
+                >Aqui!</a
+              >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium, quae quibusdam aperiam laudantium velit voluptatum
+              iste perferendis quia culpa, maxime optio eligendi? Reiciendis rem
+              doloremque mollitia aliquam blanditiis autem ducimus!
+            </p>
+          </article>
         </section>
-        <section id="comentarios">
-            <article class="comentario" id="comentario_uno">
-                <img src="/Entrega Class 4/Imagenes/Avatar.jpg" alt="USer one" width="50px" />
-                <p>Aprendi mucho</p>
-            </article>
-            <article class="comentario" id="comentario_dos">
-                <img src="/Entrega Class 4/Imagenes/Avatar.jpg" alt="USer two" width="50px" />
-                <p>Aprendi mas que mucho</p>
-            </article>
-            <article class="comentario" id="comentario_tres">
-                <img src="/Entrega Class 4/Imagenes/Avatar.jpg" alt="USer three" width="50px" />
-                <p>Aprendi muchisimo</p>
-            </article>
-        </section>
-        <section class="form-father-class">
-            <div class="form">
-                <div class="subtitle">Dejanos un comentario!</div>
-                <div class="input-container ic1">
-                    <input id="nombre" class="input" type="text" placeholder="" />
-                    <div class="cut"></div>
-                    <label for="nombre" class="placeholder">Nombre</label>
-                </div>
-                <div class="input-container ic2">
-                    <input id="apellido" class="input" type="text" placeholder="" />
-                    <div class="cut"></div>
-                    <label for="apellido" class="placeholder">Apellido</label>
-                </div>
-                <div class="input-container ic2">
-                    <input id="email" class="input" type="text" placeholder="" />
-                    <div class="cut cut-short"></div>
-                    <label for="email" class="placeholder">Email</label>
-                </div>
-                <div class="input-container ic2">
-                    <input id="comentario" class="input" type="text" placeholder="">
-                    <div class="cut"></div>
-                    <label for="comentario" class="placeholder">Comentario</label>
-                </div>
-                <button type="text" class="submit">Enviar Comentario</button>
-            </div>
-        </section>
-    </main>
-    <aside>
-        <h4>Unete ya!!! Telecom</h4>
-        <p>Es muy buena, muy rapida</p>
-    </aside>
-    <footer>
-        <h2 class="elem-foot">Digitalers! &copy;</h2>
-        <a class="elem-foot" href="https://www.facebook.com" target="_blank" rel="noopener"><img
-                src="/Entrega Class 4/Imagenes/facebook.webp" width="50" height="50" alt="Facebook" /></a>
-        <a class="elem-foot" href="https://www.instagram.com" target="_blank" rel="noopener"><img
-                src="/Entrega Class 4/Imagenes/instagram.webp" width="50" height="50" alt="Instagram" /></a>
-    </footer>
-</body>
+      </div>
 
+      <div class="commentsContainer">
+        <header class="mainHeader containerTitle">
+          Conoce las opiniones de nuestros alumnos y profesores
+        </header>
+        <section id="comentarios">
+          <article class="comentario" id="comentario_uno">
+            <img src="/Imagenes/Avatar.jpg" alt="USer one" width="60px" />
+            <h3>Nombre: Pepito Digitaler</h3>
+            <h4>Alumno Digitalers 1960</h4>
+            <h5>Aprendi mucho</h5>
+          </article>
+          <article class="comentario" id="comentario_dos">
+            <img src="/Imagenes/Avatar.jpg" alt="USer two" width="60px" />
+            <h3>Nombre: Juanita Digitaler</h3>
+            <h4>Alumno Digitalers 2020</h4>
+            <h5>Aprendi bastante</h5>
+          </article>
+          <article class="comentario" id="comentario_tres">
+            <img src="/Imagenes/Avatar.jpg" alt="USer three" width="60px" />
+            <h3>Nombre: Juanito Digitaler</h3>
+            <h4>Profesor Digitalers 2019</h4>
+            <h5>Muy buen curso</h5>
+          </article>
+          <article class="comentario" id="comentario_cuatro">
+            <img src="/Imagenes/Avatar.jpg" alt="USer four" width="60px" />
+            <h3>Nombre: Lolita Digitaler</h3>
+            <h4>Profesor Digitalers 2023</h4>
+            <h5>Curso de alto nivel</h5>
+          </article>
+          <article class="comentario" id="comentario_uno">
+            <img src="/Imagenes/Avatar.jpg" alt="USer one" width="60px" />
+            <h3>Nombre: Pepito Digitaler</h3>
+            <h4>Alumno Digitalers 1960</h4>
+            <h5>Aprendi mucho</h5>
+          </article>
+          <article class="comentario" id="comentario_dos">
+            <img src="/Imagenes/Avatar.jpg" alt="USer two" width="60px" />
+            <h3>Nombre: Juanita Digitaler</h3>
+            <h4>Alumno Digitalers 2020</h4>
+            <h5>Aprendi bastante</h5>
+          </article>
+          <article class="comentario" id="comentario_tres">
+            <img src="/Imagenes/Avatar.jpg" alt="USer three" width="60px" />
+            <h3>Nombre: Juanito Digitaler</h3>
+            <h4>Profesor Digitalers 2019</h4>
+            <h5>Muy buen curso</h5>
+          </article>
+          <article class="comentario" id="comentario_cuatro">
+            <img src="/Imagenes/Avatar.jpg" alt="USer four" width="60px" />
+            <h3>Nombre: Lolita Digitaler</h3>
+            <h4>Profesor Digitalers 2023</h4>
+            <h5>Curso de alto nivel</h5>
+          </article>
+        </section>
+      </div>
+
+      <section class="form-father-class">
+        <div class="form" id="form">
+          <div class="subtitle">Dejanos un comentario!</div>
+          <div class="input-container ic1">
+            <input id="nombre" class="input" type="text" placeholder="" />
+            <div class="cut"></div>
+            <label for="nombre" class="placeholder">Nombre</label>
+          </div>
+          <div class="input-container ic2">
+            <input id="apellido" class="input" type="text" placeholder="" />
+            <div class="cut"></div>
+            <label for="apellido" class="placeholder">Apellido</label>
+          </div>
+          <div class="input-container ic2">
+            <input id="email" class="input" type="text" placeholder="" />
+            <div class="cut cut-short"></div>
+            <label for="email" class="placeholder">Email</label>
+          </div>
+          <div class="input-container ic2">
+            <input id="comentario" class="input" type="text" placeholder="" />
+            <div class="cut"></div>
+            <label for="comentario" class="placeholder">Comentario</label>
+          </div>
+          <button type="submit" class="submit">Enviar Comentario</button>
+        </div>
+      </section>
+    </main>
+
+    <aside>
+      <h4>Unete Ya! Telecom</h4>
+      <p>La empresa mas rapida</p>
+    </aside>
+
+    <footer>
+      <h2 class="elem-foot">Digitalers! &copy;</h2>
+      <a
+        class="elem-foot"
+        href="https://www.facebook.com"
+        target="_blank"
+        rel="noopener"
+        ><img
+          src="/Imagenes/facebook.webp"
+          width="25"
+          height="25"
+          alt="Facebook"
+      /></a>
+      <a
+        class="elem-foot"
+        href="https://www.instagram.com"
+        target="_blank"
+        rel="noopener"
+        ><img
+          src="/Imagenes/instagram.webp"
+          width="25"
+          height="25"
+          alt="Instagram"
+      /></a>
+    </footer>
+  </body>
 </html>
