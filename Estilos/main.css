@@ -227,10 +227,10 @@ footer {
   border-radius: 5px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  background-color:#e8ded1 ;
+  background-color: #e8ded1;
 }
 
-.commentsContainer{
+.commentsContainer {
   width: 80vw;
   margin: auto;
   padding-top: 10px;
@@ -264,17 +264,18 @@ footer {
   margin: 10px;
 }
 
-.comentario h4,h5 {
+.comentario h4,
+h5 {
   font-weight: 100;
 }
 
-.comentario img{
+.comentario img {
   margin-top: 25px;
   margin-bottom: 25px;
   border-radius: 50%;
 }
 
-.comentario img:hover{
+.comentario img:hover {
   transform: scale(1.25);
-  transition: .2s;
+  transition: 0.2s;
 }
