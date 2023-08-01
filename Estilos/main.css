@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
   font-family: "Varela Round", sans-serif;
 }
 
@@ -46,8 +44,6 @@ section .form {
 }
 
 .form-father-class {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   padding: 15px;
 }
@@ -191,12 +187,6 @@ footer {
   transform: scale(1.2, 1.2);
 }
 
-.newsContainer {
-  width: 80vw;
-  margin: auto;
-  padding-top: 10px;
-}
-
 .containerTitle {
   font-size: 40px;
 }
@@ -214,20 +204,13 @@ footer {
 
 .noticia {
   background-color: rgb(255, 230, 247);
-  width: 25vw;
-  height: 200px;
-  margin: 10px;
-  padding-bottom: 5px;
-  border-radius: 10px;
   border: 1px solid #e8ded1;
 }
 
 .mainHeader {
-  padding: 5px;
-  border-radius: 5px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
   background-color: #e8ded1;
+  margin: 0;
+  padding: 0;
 }
 
 .commentsContainer {
@@ -245,20 +228,13 @@ footer {
 }
 
 #comentarios {
-  justify-content: space-around;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   background-image: url(/Imagenes/Flower.webp);
-  text-align: center;
-  align-items: start;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
 .comentario {
   border-radius: 5%;
-  width: 300px;
   background-color: rgb(255, 230, 247);
   padding: 1em;
   margin: 10px;
