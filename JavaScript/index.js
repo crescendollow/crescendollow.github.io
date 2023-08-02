@@ -19,14 +19,24 @@ let News = [
 
 let Comments = [
   {
-    nombre: "Un juegaso para aprender CSS",
-    rol: "Queres ser un jedi del frontend? Que estas esperando. El programa digitalers es tu oportunidad. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum aliquid explicabo quia molestiae mollitia corrupti, doloribus nihil? Expedita dolorem voluptatum est, eius cumque voluptatibus odio at magnam ipsum odit recusandae?",
-    comentario: "Un juegaso para aprender CSS",
+    nombre: "Pepito Digitaler",
+    rol: "Alumno Digitalers",
+    comentario: "Aprendi mucho",
   },
   {
-    nombre: "Apaospas",
-    rol: "Queres ser un jedi del frontend? Que estas esperando. El programa digitalers es tu oportunidad. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum aliquid explicabo quia molestiae mollitia corrupti, doloribus nihil? Expedita dolorem voluptatum est, eius cumque voluptatibus odio at magnam ipsum odit recusandae?",
-    comentario: "Un juegaso para aprender CSS",
+    nombre: "Juanita Digitaler",
+    rol: "Alumno Digitalers 2020",
+    comentario: "Aprendi bastante",
+  },
+  {
+    nombre: "Juanito Digitaler",
+    rol: "Alumno Digitalers 2029",
+    comentario: "Aprendi bastante",
+  },
+  {
+    nombre: "Lolita Digitaler",
+    rol: "Profesor Digitalers",
+    comentario: "Curso de alto nivel",
   },
 ];
 
@@ -56,14 +66,14 @@ function addNoticia(noticia) {
 function addComment(comment) {
   const dataList = document.getElementById("comentarios");
   let newComment = document.createElement("article");
-  newComment.innerHTML = 
-  `<article>
+  newComment.innerHTML = `<article>
         <img src="Imagenes/Avatar.jpg" alt="USer two" width="60px" />
         <h3>Nombre: ${comment.nombre}</h3>
-        <h4>${comment.rol}</h4>
-        <h5>${comment.comentario}</h5>
+        <h4>Rol: ${comment.rol}</h4>
+        <h5>Experiencia Personal: ${comment.comentario}</h5>
     </article>`;
-  newComment.className = "comentario col-5 noticia m-2 p-0 rounded shadow mb-5 bg-body-tertiary rounded";
+  newComment.className =
+    "comentario col-5 noticia m-2 p-0 rounded shadow mb-5 bg-body-tertiary rounded text-center";
 
   let deleteBtn = document.createElement("button");
   deleteBtn.innerHTML = "&#128465;&#65039;";
@@ -108,43 +118,42 @@ window.addEventListener("load", () => {
 
   newNoticia.appendChild(nombreComment);
 
-  let btnEliminar = document.createElement("button");
-  btnEliminar.innerHTML = "&#128465;&#65039;";
-  btnEliminar.className = "btn btn-danger float-end";
-  btnEliminar.addEventListener("click", (evt) => {
-    if (confirm("Desea eliminar el elemento")) {
+  let deleteBtn = document.createElement("button");
+  deleteBtn.innerHTML = "&#128465;&#65039;";
+  deleteBtn.className = "btn btn-danger float-end";
+  deleteBtn.addEventListener("click", (evt) => {
+    if (confirm("Desea eliminar comentario?")) {
       let sender = evt.target;
-      let liContenedor = sender.parentElement;
-      dataList.removeChild(liContenedor);
+      let commentContainer = sender.parentElement;
+      dataList.removeChild(commentContainer);
     }
   });
-  li.appendChild(btnEliminar);
+  newComment.appendChild(deleteBtn);
 
-  dataList.appendChild(li);
+  dataList.appendChild(newComment);
 }
 */
 
 window.addEventListener("load", () => {
   let btnAddComment = document.getElementById("commentForm");
-  //btnAgregarTarea.onclick= ..
+
   btnAddComment.addEventListener("click", () => {
-    let newNameComment = document.querySelector("#nombre")
-    let newRolComment = document.querySelector("#comentario")
-    let newComentarioComment = document.querySelector("#comentario")
-    
-    //if (txtTareaNueva.value) {
-    // agregarTarea(txtTareaNueva.value);
-    //}
+    let newNameComment = document.querySelector("#nombre");
+    let newRolComment = document.querySelector("#rol");
+    let newComentarioComment = document.querySelector("#comentario");
 
-    const aux = {
-        nombre: newNameComment.value,
-        rol : newRolComment.value,
-        comentario: newComentarioComment.value
-    }
+    let aux = {
+      nombre: newNameComment.value,
+      rol: newRolComment.value,
+      comentario: newComentarioComment.value,
+    };
 
-    newNameComment.value && newRolComment.value && newComentarioComment.value && addComment(aux);
+    newNameComment.value &&
+      newRolComment.value &&
+      newComentarioComment.value &&
+      addComment(aux);
     newNameComment.value = "";
-    newRolComment.value = ""
-    newComentarioComment.value = ""
+    newRolComment.value = "";
+    newComentarioComment.value = "";
   });
 });
