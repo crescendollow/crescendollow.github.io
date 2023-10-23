@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+* {
+    font-family: "Varela Round", sans-serif;
+}
+
+body>header {
+    background-color: rgb(255, 230, 247);
+}
+
+.mainHeader{
+    background-color: rgb(255, 230, 247);
+}
+
+body>header>div {
+    display: inline-block;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+aside {
+    position: absolute;
+    top: 200px;
+    width: 200px;
+    right: 0px;
+    z-index: 2;
+    background-color: #e8ded1;
+    border-radius: 15px;
+    padding: 1em;
+    border: solid 1px;
+    text-align: center;
+}
+
+aside p {
+    margin-top: 5px;
+}
+
+section .form {
+    align-content: center;
+}
+
+.form-father-class {
+    align-items: center;
+    padding: 15px;
+}
+
+.form {
+    position: relative;
+    background-color: rgb(255, 230, 247);
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 75px;
+    font-weight: 600;
+}
+
+.pageSubtitle {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.subtitle {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.input {
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    height: 40px;
+    outline: 0;
+    padding: 4px 10px 0;
+    width: 100%;
+}
+
+.submit {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    text-align: center;
+    width: 100%;
+}
+
+nav {
+    background-color: rgb(255, 230, 247);
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(255, 230, 247);
+    position: sticky;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.elem-foot {
+    display: inline-block;
+    margin: 5px;
+}
+
+.elem-foot img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.containerTitle {
+    font-size: 40px;
+}
+
+.noticias-box {
+    background-image: url(../src/public/Images/Flower.webp);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.noticia {
+    background-color: rgb(255, 230, 247);
+    border: 1px solid #e8ded1;
+}
+
+.mainHeader {
+    background-color: #e8ded1;
+    margin: 0;
+    padding: 0;
+}
+
+.commentsContainer {
+    width: 80vw;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.newsBody {
+    margin: 5px;
+    padding: 5px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#comentarios {
+    background-image: url(../src/public/Images/Flower.webp);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.comentario {
+    border-radius: 5%;
+    background-color: rgb(255, 230, 247);
+    padding: 1em;
+    margin: 10px;
+}
+
+.comentario h4,
+h5 {
+    font-weight: 100;
+}
+
+.imgAvatar{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 50%;
+}
+
+.imgAvatar:hover {
+    transform: scale(1.25);
+    transition: 0.2s;
+}
